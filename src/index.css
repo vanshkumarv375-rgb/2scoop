@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #e11d48;
+  --color-brand-red-hover: #be123c;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@utility text-clamp-hero {
+  font-size: clamp(1.65rem, 6vw + 0.5rem, 3.5rem);
+}
+
+@utility text-clamp-section {
+  font-size: clamp(1.35rem, 4vw + 0.25rem, 1.875rem);
+}
+
+@utility text-clamp-announcement {
+  font-size: clamp(10px, 1.8vw, 12px);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Global Reset to Elite Dark theme styles */
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #0a0a0a !important;
+  color: #ffffff !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  scrollbar-gutter: stable;
+}
+
+/* Custom design specifications from "Elegant Dark" guidelines */
+.metallic-text {
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.red-glow {
+  box-shadow: 0 0 20px rgba(225, 29, 72, 0.3);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(12px);
+}
+
+.product-gradient {
+  background: radial-gradient(circle at center, #1f1f1f 0%, #0a0a0a 100%) !important;
+}
+
+/* Scrollbar styling */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Override existing red button styles to glow elegantly */
+button {
+  transition: all 0.2s ease-in-out;
+}

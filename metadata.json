@@ -1,0 +1,6 @@
+{
+  "name": "2ScoopNutritoon",
+  "description": "Premium, professional e-commerce platform for sports nutrition and supplements including product catalog, checkout, authentication, and an administrative hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
